@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xueguoliang/cpp6/linux-network/day06/tufao/src/priv/http_parser.c
+http_parser.h
+/home/xueguoliang/cpp6/linux-network/day06/tufao/src/priv/http_parser.h
+assert.h
+-
+stddef.h
+-
+ctype.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+
+/home/xueguoliang/cpp6/linux-network/day06/tufao/src/priv/http_parser.h
+sys/types.h
+-
+BaseTsd.h
+-
+stddef.h
+-
+stdint.h
+-
+

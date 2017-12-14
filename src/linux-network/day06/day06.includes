@@ -1,0 +1,14 @@
+tufao/examples/qmake/hello-session
+tufao/examples/qmake/request-dumper
+tufao/examples/qmake/sessionusage
+tufao/examples/qmake/threads-example
+tufao/examples/qmake/threads-with-router-example
+tufao/examples/qmake/websocket-chat
+tufao/examples/qmake/websocket-chat-client
+tufao/src
+tufao/src/doc
+tufao/src/doc/examples
+tufao/src/priv
+tufao/src/tests
+tufao/src/tests/httppluginserver
+tufao-test

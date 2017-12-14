@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BOX_H	src/box.h	2;"	d
+BOX_UTIL_H	src/box_util.h	2;"	d
+__box_free	src/box_util.h	/^static void (*__box_free)(void*) = free;$/;"	v
+__box_log	src/box_util.h	/^static inline void __box_log(char* file, int line, const char* fmt, ...)$/;"	f	signature:(char* file, int line, const char* fmt, ...)
+__box_malloc	src/box_util.h	/^static void* (*__box_malloc)(size_t) = malloc;$/;"	v
+__box_printf	src/box_util.h	/^static int (*__box_printf)(const char* fmt, ...) = printf;$/;"	v
+__box_start_server	src/box.h	/^static inline int __box_start_server(unsigned short port, const char* ip, int backlog)$/;"	f	signature:(unsigned short port, const char* ip, int backlog)
+__box_vsprintf	src/box_util.h	/^static int(*__box_vsprintf)(const char* fmt, va_list ap) = vprintf;$/;"	v
+b	src/box.c	/^static box* b = NULL;$/;"	v	file:
+box	src/box.h	/^typedef struct box$/;"	s
+box	src/box.h	/^} box;$/;"	t	typeref:struct:box
+box::epollfd	src/box.h	/^    int epollfd;$/;"	m	struct:box	access:public
+box_add	src/box.c	/^void box_add(box_channel* ch)$/;"	f	signature:(box_channel* ch)
+box_add	src/box.h	/^void box_add(box_channel* c);$/;"	p	signature:(box_channel* c)
+box_add_socket	src/box.c	/^void box_add_socket(int sock, void (*cb)(box_channel *))$/;"	f	signature:(int sock, void (*cb)(box_channel *))
+box_add_socket	src/box.h	/^void box_add_socket(int sock, void(*cb)(box_channel*c));$/;"	p	signature:(int sock, void(*cb)(box_channel*c))
+box_channel	src/box.h	/^typedef struct box_channel$/;"	s
+box_channel	src/box.h	/^} box_channel;$/;"	t	typeref:struct:box_channel
+box_channel::cb	src/box.h	/^    void (*cb)(struct box_channel* c);$/;"	m	struct:box_channel	access:public
+box_channel::session	src/box.h	/^    void* session;$/;"	m	struct:box_channel	access:public
+box_channel::sock	src/box.h	/^    int sock;$/;"	m	struct:box_channel	access:public
+box_channel_create	src/box.c	/^box_channel* box_channel_create(int fd, void(*cb)(box_channel*c))$/;"	f	signature:(int fd, void(*cb)(box_channel*c))
+box_channel_create	src/box.h	/^box_channel* box_channel_create(int fd, void(*cb)(box_channel*c));$/;"	p	signature:(int fd, void(*cb)(box_channel*c))
+box_channel_destroy	src/box.c	/^void box_channel_destroy(box_channel *c)$/;"	f	signature:(box_channel *c)
+box_channel_destroy	src/box.h	/^void box_channel_destroy(box_channel* c);$/;"	p	signature:(box_channel* c)
+box_fini	src/box.c	/^void box_fini()$/;"	f
+box_fini	src/box.h	/^void box_fini();$/;"	p	signature:()
+box_free	src/box_util.h	12;"	d
+box_handle_socket	src/box.c	/^void box_handle_socket(struct epoll_event* ev)$/;"	f	signature:(struct epoll_event* ev)
+box_init	src/box.c	/^void box_init()$/;"	f
+box_init	src/box.h	/^void box_init();$/;"	p	signature:()
+box_log	src/box_util.h	29;"	d
+box_malloc	src/box_util.h	11;"	d
+box_run	src/box.c	/^void box_run()$/;"	f
+box_run	src/box.h	/^void box_run();$/;"	p	signature:()
+box_session	src/box.h	/^typedef struct box_session$/;"	s
+box_session	src/box.h	/^} box_session;$/;"	t	typeref:struct:box_session
+box_session::buf	src/box.h	/^    char buf[8192];$/;"	m	struct:box_session	access:public
+box_session::c	src/box.h	/^    box_channel* c ;$/;"	m	struct:box_session	access:public
+box_session::cb	src/box.h	/^    void(*cb)(struct box_session*);$/;"	m	struct:box_session	access:public
+box_session::pkt_len	src/box.h	/^    int pkt_len; \/\/ 报文有多长$/;"	m	struct:box_session	access:public
+box_session::read_len	src/box.h	/^    int read_len; \/\/ 已经读的数据有多长$/;"	m	struct:box_session	access:public
+box_session_create	src/box.c	/^box_session* box_session_create(box_channel* c, int pkt_len,$/;"	f	signature:(box_channel* c, int pkt_len, void(*cb)(box_session*))
+box_session_create	src/box.h	/^box_session* box_session_create(box_channel* c, int pkt_len, void(*cb)(box_session*));$/;"	p	signature:(box_channel* c, int pkt_len, void(*cb)(box_session*))
+box_session_destroy	src/box.c	/^void box_session_destroy(box_session* s)$/;"	f	signature:(box_session* s)
+box_session_destroy	src/box.h	/^void box_session_destroy(box_session*);$/;"	p	signature:(box_session*)
+box_set_nonblock	src/box.h	/^static inline void box_set_nonblock(int fd)$/;"	f	signature:(int fd)
+box_start_server	src/box.c	/^void box_start_server($/;"	f	signature:( unsigned short port, const char *ip, int backlog, void(*cb)(box_channel*))
+box_start_server	src/box.h	/^void box_start_server(unsigned short port,$/;"	p	signature:(unsigned short port, const char* ip, int backlog, void(*cb)(box_channel*))
+buf	src/box.h	/^    char buf[8192];$/;"	m	struct:box_session	access:public
+c	src/box.h	/^    box_channel* c ;$/;"	m	struct:box_session	access:public
+cb	src/box.h	/^    void (*cb)(struct box_channel* c);$/;"	m	struct:box_channel	access:public
+cb	src/box.h	/^    void(*cb)(struct box_session*);$/;"	m	struct:box_session	access:public
+epollfd	src/box.h	/^    int epollfd;$/;"	m	struct:box	access:public
+handle_packet	sample/chatServer.c	/^void handle_packet(char* pkt, box_session* s)$/;"	f	signature:(char* pkt, box_session* s)
+main	sample/chatServer.c	/^int main()$/;"	f
+main	sample/main.c	/^int main()$/;"	f
+pkt_len	src/box.h	/^    int pkt_len; \/\/ 报文有多长$/;"	m	struct:box_session	access:public
+read_len	src/box.h	/^    int read_len; \/\/ 已经读的数据有多长$/;"	m	struct:box_session	access:public
+server_callback	sample/chatServer.c	/^void server_callback(box_channel* c)$/;"	f	signature:(box_channel* c)
+server_callback	sample/main.c	/^void server_callback(box_channel* c)$/;"	f	signature:(box_channel* c)
+session	src/box.h	/^    void* session;$/;"	m	struct:box_channel	access:public
+session_header	sample/chatServer.c	/^void session_header(box_session* s)$/;"	f	signature:(box_session* s)
+session_header	sample/chatServer.c	/^void session_header(box_session* s);$/;"	p	file:	signature:(box_session* s)
+session_header	sample/main.c	/^void session_header(box_session* s)$/;"	f	signature:(box_session* s)
+session_header	sample/main.c	/^void session_header(box_session* s);$/;"	p	file:	signature:(box_session* s)
+session_packet	sample/chatServer.c	/^void session_packet(box_session* s)$/;"	f	signature:(box_session* s)
+session_packet	sample/main.c	/^void session_packet(box_session* s)$/;"	f	signature:(box_session* s)
+session_read	src/box.c	/^void session_read(struct box_channel* c)$/;"	f	signature:(struct box_channel* c)
+sock	src/box.h	/^    int sock;$/;"	m	struct:box_channel	access:public

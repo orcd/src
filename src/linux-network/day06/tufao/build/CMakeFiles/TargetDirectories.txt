@@ -1,0 +1,3 @@
+/home/xueguoliang/cpp6/linux-network/day06/tufao/build/src/CMakeFiles/tufao1.dir
+/home/xueguoliang/cpp6/linux-network/day06/tufao/build/src/CMakeFiles/tufao1_automoc.dir
+/home/xueguoliang/cpp6/linux-network/day06/tufao/build/CMakeFiles/uninstall.dir
